@@ -2,8 +2,8 @@
 var wins = 0;
 var losses = 0;
 var Goal;
-//var Score;
-//var fruitValue;
+var Score;
+var fruitValue;
 
 //wins
 //losses
@@ -13,13 +13,27 @@ var Goal;
 
 //create a function to start/reset game
 function resetGame(){
-    Goal = Math.floor(Math.random()*120)+19;
-    console.log(Goal);
-}
     //create a new random number between 19 and 120
     //Update this on the page
+    Goal = Math.floor(Math.random()*101)+19;
+    $("#ComputerNumber").text(Goal);
+    console.log(Goal);
     //create new values for each crystal between 1 and 12
+    fruitValue = Math.floor(Math.random()*12)+1;
     //Assign each value to a crystal
+    for(var i = 1; i < 4; i++){
+        
+    }
+    Score = 0;
+}
+
+if(Score === Goal){
+    wins++;
+    resetGame();
+} else if (Score > Goal){
+    losses++;
+    resetGame();
+}
     //Update losses on the page
     //Update wins on the page
     //Reset score to 0

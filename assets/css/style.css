@@ -3,8 +3,10 @@
     width: 60px;
     margin: auto;
 }
-h1{
+h2, h1{
     text-align: center;
+    background: whitesmoke;
+    font-size: 70px;
 
 }
 .col-md-6{
@@ -21,6 +23,7 @@ h1{
 #instructions, h3 {
     border: 5px solid gray;
     box-shadow: 5px 10px;
+    padding-bottom: 30px;
 
 }
 body{

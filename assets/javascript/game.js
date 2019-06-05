@@ -27,7 +27,7 @@ var fruitValue;
 function resetGame(){
     //create a new random number between 19 and 120
     //Update this on the page
-    Goal = [Math.floor(Math.random() * 101) + 19];
+    Goal = Math.floor(Math.random() * 101) + 19;
     $("#ComputerNumber").text(Goal);
     console.log(Goal);
     //create new values for each crystal between 1 and 12
@@ -38,8 +38,9 @@ function resetGame(){
         fruitValue = Math.floor(Math.random() * 12) + 1;
         $(this).attr("data-fruitvalue", fruitValue);
     });
+    Score = 0;
+    $("#userNumber").text(Score);
 
-    Score = 0
 }
 
 resetGame();
@@ -61,6 +62,7 @@ $(".fruit").on("click", function (){
     //call reset function
     if(Score === Goal){
         wins++;
+        $("#wins").text(wins);
         resetGame();
         //Update losses on the page
         //If score > goal
@@ -68,9 +70,10 @@ $(".fruit").on("click", function (){
         //call reset function
     } else if (Score > Goal){
         losses++;
+        $("#losses").text(losses);
         resetGame();
     }
-})
+});
 
         //If score === goal
             //wins++

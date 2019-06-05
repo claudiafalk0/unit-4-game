@@ -44,7 +44,13 @@ function resetGame(){
 }
 
 resetGame();
-
+$(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+        $("#Begin").hide();
+        $(".container").show();
+    }
+})
 //create a click event 
 $(".fruit").on("click", function (){
     //Grab the value of the crystal clicked

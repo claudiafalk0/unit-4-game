@@ -1,6 +1,6 @@
 .fruit{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     margin: auto;
 }
 h2, h1{
@@ -28,5 +28,6 @@ h2, h1{
 }
 body{
     background-image: url(../images/picnic.jpg);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 3000px 1000px;
 }

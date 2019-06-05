@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang= "en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title> Crystals Collector </title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <h1>Crystals Collector</h1>
-        <h2> <span id = "Begin">Press Any Key to Start</span></h2>
-        <div id = "instructions">
-            <p> You will be given a random number at the start of the game. </p>
-            <p> There are four fruits below. By clicking on a fruit you will add a specific amount of points to your total score.</p>
-            <p> You win the game by matching your total score to randome number, you lose the game if your total score goeas above the random number</p>
-            <p> The value of each crystal is hidden from you until you click on it.</p>
-            <p> Each time when the game starts, the game will change the values of each crystal.</p>
-        </div>
-            <img src = "assets/images/apple.jpg" alt = "apple" id = "fruit" class= "fruit1"> 
-            <img src = "assets/images/banana.jpg" alt = "banana" id = "fruit" class= "fruit2">
-            <img src = "assets/images/lemon.jpg" alt = "lemon" id = "fruit" class= "fruit3">
-            <img src = "assets/images/cherries.jpg" alt = "cherries" id = "fruit" class= "fruit4">
-        <h3> Computer Number: <span id = "ComputerNumber"> 0 </span></h3>
-        <h3> Your Total Score is: <span id = "userNumber"></span></h3>
-        <p>Wins: <span id = "wins"> 0 </span></p>
-        <p>Losses:<span id = "losses"> 0 </span></p>
-        
-    <script type = "text/javascript" src = "assets/javascript/game.js"></script>
-    </body>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Crystals Collector </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Fruit Collector</h1>
+    <h2> <span id="Begin">Press Any Key to Start</span></h2>
+    <div id="instructions">
+        <p> You will be given a random number at the start of the game. </p>
+        <p> There are four fruits below. By clicking on a fruit you will add a specific amount of points to your total
+            score.</p>
+        <p> You win the game by matching your total score to randome number, you lose the game if your total score goeas
+            above the random number</p>
+        <p> The value of each crystal is hidden from you until you click on it.</p>
+        <p> Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <span id="fruits"></span>
+    <img src="assets/images/apple.jpg" alt="apple" class="fruit" id="fruit1">
+    <img src="assets/images/banana.jpg" alt="banana" class="fruit" id="fruit2">
+    <img src="assets/images/lemon.jpg" alt="lemon" class="fruit" id="fruit3">
+    <img src="assets/images/cherries.jpg" alt="cherries" class="fruit" id="fruit4">
+    <h3> Computer Number: <span id="ComputerNumber"> 0 </span></h3>
+    <h3> Your Total Score is: <span id="userNumber"></span></h3>
+    <p>Wins: <span id="wins"> 0 </span></p>
+    <p>Losses:<span id="losses"> 0 </span></p>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
 
 </html>

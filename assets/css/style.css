@@ -16,6 +16,7 @@ h1{
 }
 .row{
     padding: 20px; 
+    background: whitesmoke;
 }
 #instructions, h3 {
     border: 5px solid gray;
@@ -23,6 +24,6 @@ h1{
 
 }
 body{
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1);
+    background-image: url(../images/picnic.jpg);
     background-size: cover;
 }
